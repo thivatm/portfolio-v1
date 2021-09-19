@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Project({ data }) {
    const goToLink = (e, link) => {
@@ -11,9 +11,28 @@ function Project({ data }) {
       navigator.clipboard.writeText(link)
    }
 
+   const callback = function (entries) {
+      entries.forEach((entry) => {
+         if (entry.isIntersecting) {
+            entry.target.classList.add('animate__fadeInUp')
+            entry.target.classList.remove('opacity-0')
+         }
+      })
+   }
+
+   useEffect(() => {
+      const observer = new IntersectionObserver(callback)
+
+      const targets = document.querySelectorAll('.animate__animated')
+      targets.forEach(function (target) {
+         target.classList.add('opacity-0')
+         observer.observe(target)
+      })
+   }, [])
+
    return (
       <div
-         className="flex flex-col bg-brand-800 p-8 rounded-md transition-all"
+         className="flex flex-col bg-brand-800 p-8 rounded-md transition-all animate__animated"
          onClick={(e) => goToLink(e, data.link)}>
          <p className="flex items-center justify-between text-2xl font-bold text-turquo tracking-wider">
             <span>{data.title}</span>

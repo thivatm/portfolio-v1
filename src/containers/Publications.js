@@ -43,7 +43,9 @@ function Publications() {
          </h3>
          <div className="grid md:grid-cols-3 gap-4">
             {articles.map((article, index) => (
-               <Article key={index} data={article} />
+               <div key={index} className="animate__animated">
+                  <Article key={index} data={article} />
+               </div>
             ))}
          </div>
       </div>

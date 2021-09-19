@@ -23,7 +23,7 @@ function AboutMe() {
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">01.</span> About Me
          </h3>
-         <div className="flex items-center justify-between">
+         <div className="flex items-center justify-between animate__animated">
             <div className="md:w-2/3 md:pr-8">
                <p className="text-gray-400 mb-4 text-justify">
                   Hello! I am Thivagar and I enjoy building everything, from
@@ -79,7 +79,7 @@ function AboutMe() {
                   </ul>
                </div>
             </div>
-            <div className="md:w-1/3 px-8">
+            <div className="md:w-1/3 px-8 animate__animated">
                <div className="md:w-full m-auto relative">
                   <div className="absolute w-full h-full inset-0 z-30 bg-brand-300 bg-opacity-40 transition-all hover:bg-opacity-0"></div>
                   <PDFView />
