@@ -23,7 +23,7 @@ function Project({ data }) {
    useEffect(() => {
       const observer = new IntersectionObserver(callback)
 
-      const targets = document.querySelectorAll('.animate__animated')
+      const targets = document.querySelectorAll('.anim.animate__animated')
       targets.forEach(function (target) {
          target.classList.add('opacity-0')
          observer.observe(target)
@@ -32,7 +32,7 @@ function Project({ data }) {
 
    return (
       <div
-         className="flex flex-col bg-brand-800 p-8 rounded-md transition-all animate__animated"
+         className="flex flex-col bg-brand-800 p-8 rounded-md transition-all animate__animated anim"
          onClick={(e) => goToLink(e, data.link)}>
          <p className="flex items-center justify-between text-2xl font-bold text-turquo tracking-wider">
             <span>{data.title}</span>

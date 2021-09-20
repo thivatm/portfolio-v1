@@ -8,6 +8,7 @@ import Publications from 'containers/Publications'
 import 'animate.css'
 import { useEffect, useState } from 'react'
 import MusicBox from 'components/MusicBox'
+import SocialLinks from 'components/SocialLinks'
 
 function Home() {
    const [pageLoaded, setPageLoaded] = useState(false)
@@ -25,7 +26,7 @@ function Home() {
       window.addEventListener('scroll', () => setPageLoaded(true))
       const observer = new IntersectionObserver(callback)
 
-      const targets = document.querySelectorAll('.animate__animated')
+      const targets = document.querySelectorAll('.anim.animate__animated')
       targets.forEach(function (target) {
          target.classList.add('opacity-0')
          observer.observe(target)
@@ -45,9 +46,11 @@ function Home() {
                <Contact />
             </div>
          </div>
+         <div className="animate__animated animate__fadeInLeft fixed left-14 bottom-0">
+            <SocialLinks />
+         </div>
          <div className="fixed right-5 bottom-5">
             {pageLoaded ? <MusicBox pageLoaded={pageLoaded} /> : null}
-            {/* <MusicBox pageLoaded={pageLoaded} /> */}
          </div>
       </div>
    )

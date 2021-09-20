@@ -21,7 +21,7 @@ function MusicBox({ pageLoaded }) {
    }, [pageLoaded])
 
    return (
-      <div className="flex items-center justify-between space-x-1 p-1 border-2 border-dashed border-turquo w-full rounded">
+      <div className="flex items-center justify-between space-x-1 p-1 border border-magnolia w-full opacity-50 hover:opacity-100">
          <div>
             <img
                className="w-12 h-12 object-cover"
@@ -61,7 +61,7 @@ function MusicBox({ pageLoaded }) {
                )}
             </div>
 
-            <div
+            {/* <div
                className="hover:opacity-75"
                onClick={() => controlSound(ReactSound.status.STOPPED)}>
                <svg
@@ -75,7 +75,7 @@ function MusicBox({ pageLoaded }) {
                      clipRule="evenodd"
                   />
                </svg>
-            </div>
+            </div> */}
          </div>
          <ReactSound
             url="a4qxs8zqv.mp3"

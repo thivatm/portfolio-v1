@@ -37,13 +37,13 @@ function Publications() {
    }, [])
 
    return (
-      <div className="h-screen font-inter text-white">
-         <h3 className="font-fira text-2xl font-semibold text-white mb-8">
+      <div id="blogs" className="h-screen font-inter text-white">
+         <h3 className="font-fira text-2xl font-semibold text-white mb-8 animate_animated">
             <span className="text-turquo font-light">04.</span> Publications
          </h3>
          <div className="grid md:grid-cols-3 gap-4">
             {articles.map((article, index) => (
-               <div key={index} className="animate__animated">
+               <div key={index} className="animate__animated anim">
                   <Article key={index} data={article} />
                </div>
             ))}

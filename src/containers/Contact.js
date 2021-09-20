@@ -6,8 +6,10 @@ function Contact() {
       window.open('mailto:thivagartm@gmail.com', '_blank')
    }
    return (
-      <div className="h-screen flex justify-center items-center flex-col font-inter text-white">
-         <div className="animate__animated text-center">
+      <div
+         id="contact"
+         className="h-screen flex justify-center items-center flex-col font-inter text-white">
+         <div className="animate__animated anim text-center">
             <h3 className="font-fira text-2xl font-semibold text-white mb-8">
                <span className="text-turquo font-light">05.</span> Get In Touch
             </h3>

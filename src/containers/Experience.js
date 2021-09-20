@@ -51,7 +51,9 @@ function Experience() {
    }, [])
 
    return selectedJob ? (
-      <div className="mb-56 mt-24 flex-col font-inter text-white animate__animated">
+      <div
+         id="experience"
+         className="mb-64 mt-24 flex-col font-inter text-white animate__animated anim">
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">02.</span> Experience
          </h3>

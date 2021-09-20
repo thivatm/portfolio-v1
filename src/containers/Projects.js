@@ -26,8 +26,8 @@ function Projects() {
    }, [])
 
    return (
-      <div className="h-screen font-inter text-white">
-         <h3 className="font-fira text-2xl font-semibold text-white mb-8">
+      <div id="projects" className="h-screen font-inter text-white">
+         <h3 className="font-fira text-2xl font-semibold text-white mb-8 animate__animated anim">
             <span className="text-turquo font-light">03.</span> Projects
          </h3>
          <div className="grid grid-cols-2 gap-4">

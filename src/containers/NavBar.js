@@ -24,7 +24,7 @@ function NavBar() {
             link: '#aboutme',
          },
          {
-            name: 'Exoerience',
+            name: 'Work',
             link: '#experience',
          },
          {
@@ -32,7 +32,7 @@ function NavBar() {
             link: '#projects',
          },
          {
-            name: 'Blogs',
+            name: 'Articles',
             link: '#blogs',
          },
          {
@@ -53,7 +53,7 @@ function NavBar() {
          } transition duration-700 bg-brand text-white fixed z-50 inset-x-0 top-0 shadow-md backdrop-filter backdrop-blur bg-opacity-80`}>
          <div className="h-20 py-3 px-12 font-fira flex items-center justify-between text-sm">
             <div className="logo-container">
-               <img className="w-14" alt="logo" src="/v6-logo.png" />
+               {/* <img className="w-9" alt="logo" src="/logo.png" /> */}
             </div>
             <ul className="flex items-center justify-between space-x-12">
                {navItems.map((item, index) => (
