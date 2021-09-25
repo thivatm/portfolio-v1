@@ -1,4 +1,4 @@
-import PDFView from 'components/PDFView'
+// import PDFView from 'components/PDFView'
 import React, { useEffect, useState } from 'react'
 
 function AboutMe() {
