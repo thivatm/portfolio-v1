@@ -10,7 +10,7 @@ function Projects() {
             title: 'RealSketch',
             technologies: ['Python', 'PyTorch', 'Flask'],
             description:
-               'In my Final Year Research Project, there’s a discussion on how we can bridge the gap between the industrial designer and their production workflow to reduce the cost of the time they spend on prototyping. An image synthesizing technique to generate a photo-realistic image of a real-world object from a sketch has been introduced. Compared to the existing systems our system can generate images with more accuracy and more photo-realism.',
+               'In this Research Project, there’s a discussion on how we can bridge the gap between the industrial designer and their production workflow to reduce the cost and time they spend on prototyping. An image synthesizing technique to generate a photo-realistic image of a real-world object from a sketch has been introduced.',
             link: 'https://ieeexplore.ieee.org/document/9213230',
             codeLink: 'https://ieeexplore.ieee.org/document/9213230',
          },
@@ -26,11 +26,13 @@ function Projects() {
    }, [])
 
    return (
-      <div id="projects" className="h-screen font-inter text-white">
+      <div
+         id="projects"
+         className="pb-32 lg:pb-0 lg:h-screen font-inter text-white">
          <h3 className="font-fira text-2xl font-semibold text-white mb-8 animate__animated anim">
             <span className="text-turquo font-light">03.</span> Projects
          </h3>
-         <div className="grid grid-cols-2 gap-4">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {projects.map((project, index) => (
                <Project key={index} data={project} />
             ))}

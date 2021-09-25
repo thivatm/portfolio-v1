@@ -3,6 +3,9 @@ module.exports = {
    darkMode: false, // or 'media' or 'class'
    theme: {
       extend: {
+         transitionProperty: {
+            width: 'width',
+         },
          colors: {
             brand: '#010B14',
             'brand-800': '#03182C',

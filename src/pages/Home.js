@@ -6,13 +6,11 @@ import Hero from 'containers/Hero'
 import NavBar from 'containers/NavBar'
 import Publications from 'containers/Publications'
 import 'animate.css'
-import { useEffect, useState } from 'react'
-import MusicBox from 'components/MusicBox'
+import { useEffect } from 'react'
 import SocialLinks from 'components/SocialLinks'
+import Footer from 'containers/Footer'
 
 function Home() {
-   const [pageLoaded, setPageLoaded] = useState(false)
-
    const callback = function (entries) {
       entries.forEach((entry) => {
          if (entry.isIntersecting) {
@@ -23,7 +21,6 @@ function Home() {
    }
 
    useEffect(() => {
-      window.addEventListener('scroll', () => setPageLoaded(true))
       const observer = new IntersectionObserver(callback)
 
       const targets = document.querySelectorAll('.anim.animate__animated')
@@ -37,20 +34,18 @@ function Home() {
       <div className="relative">
          <NavBar />
          <div className="max-w-7xl mx-auto">
-            <div className="max-w-5xl mx-auto font-inter">
+            <div className="xl:max-w-5xl lg:max-w-4xl mx-auto font-inter px-8">
                <Hero />
                <AboutMe />
                <Experience />
                <Projects />
                <Publications />
                <Contact />
+               <Footer />
             </div>
          </div>
-         <div className="animate__animated animate__fadeInLeft fixed left-14 bottom-0">
+         <div className="hidden lg:block animate__animated animate__fadeInLeft fixed lg:left-8 xl:left-14 bottom-0">
             <SocialLinks />
-         </div>
-         <div className="fixed right-5 bottom-5">
-            {pageLoaded ? <MusicBox pageLoaded={pageLoaded} /> : null}
          </div>
       </div>
    )

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Job({ data }) {
    return (
-      <div className="font-inter space-y-4 px-12">
+      <div className="font-inter space-y-4">
          <div className="space-y-2">
             <p className="text-2xl font-fira font-bold tracking-wide text-yelo">
                {data.title}

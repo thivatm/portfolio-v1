@@ -19,12 +19,12 @@ function AboutMe() {
    return (
       <div
          id="aboutme"
-         className="h-screen flex justify-center flex-col font-inter text-white">
+         className="h-screen flex justify-center flex-col font-inter text-white py-12 lg:py-0">
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">01.</span> About Me
          </h3>
-         <div className="flex items-center justify-between animate__animated anim">
-            <div className="md:w-2/3 md:pr-8">
+         <div className="flex items-center justify-between flex-col space-y-8 lg:flex-row animate__animated anim">
+            <div className="lg:w-2/3 md:pr-8">
                <p className="text-gray-400 mb-4 text-justify">
                   Hello! I am Thivagar and I enjoy building everything, from
                   small business sites to rich interactive web and mobile apps.
@@ -79,10 +79,10 @@ function AboutMe() {
                   </ul>
                </div>
             </div>
-            <div className="md:w-1/3 px-8 animate__animated anim">
-               <div className="md:w-full m-auto relative">
+            <div className="w-full md:w-2/3 lg:w-1/3 px-8 animate__animated anim">
+               <div className="w-full m-auto relative">
                   <div className="absolute w-full h-full inset-0 z-30 bg-brand-300 bg-opacity-40 transition-all hover:bg-opacity-0"></div>
-                  <PDFView />
+                  {/* <PDFView /> */}
                </div>
             </div>
          </div>

@@ -52,7 +52,7 @@ function Project({ data }) {
             </svg>
          </p>
          <div className="flex-grow">
-            <p className="tracking-wide my-4 text-gray-400 text-justify">
+            <p className="tracking-wide my-4 text-gray-400 md:text-justify">
                {data.description}
             </p>
             <div className="flex items-center space-x-4">

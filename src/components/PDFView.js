@@ -83,6 +83,6 @@ function PDFView({ size }) {
 
 export default withSize({
    refreshRate: 128,
-   refreshMode: 'debounce',
-   monitorHeight: true,
+   refreshMode: 'throttle',
+   monitorHeight: false,
 })(PDFView)

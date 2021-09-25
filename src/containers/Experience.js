@@ -57,13 +57,13 @@ function Experience() {
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">02.</span> Experience
          </h3>
-         <div className="flex items-start">
-            <ul className="font-fira">
+         <div className="lg:flex space-y-16 lg:space-y-0 items-start w-full">
+            <ul className="font-fira flex items-center lg:block">
                {jobs.map((elem, index) => (
                   <li
                      key={index}
                      onClick={() => changeJob(index)}
-                     className={`px-6 py-3 border-l-2 cursor-pointer ${
+                     className={`px-6 py-3 border-b-2 lg:border-b-0 lg:border-l-2 cursor-pointer ${
                         index === jobs.indexOf(selectedJob)
                            ? 'border-turquo'
                            : 'border-brand'
@@ -72,7 +72,7 @@ function Experience() {
                   </li>
                ))}
             </ul>
-            <div>
+            <div className="lg:px-12">
                <Job data={selectedJob} />
             </div>
          </div>

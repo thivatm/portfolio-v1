@@ -61,7 +61,7 @@ function MusicBox({ pageLoaded }) {
                )}
             </div>
 
-            {/* <div
+            <div
                className="hover:opacity-75"
                onClick={() => controlSound(ReactSound.status.STOPPED)}>
                <svg
@@ -75,7 +75,7 @@ function MusicBox({ pageLoaded }) {
                      clipRule="evenodd"
                   />
                </svg>
-            </div> */}
+            </div>
          </div>
          <ReactSound
             url="a4qxs8zqv.mp3"
