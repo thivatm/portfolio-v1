@@ -8,6 +8,7 @@ module.exports = {
          },
          colors: {
             brand: '#010B14',
+            'brand-900': '#021628',
             'brand-800': '#03182C',
             'brand-700': '#042643',
             'brand-600': '#06335B',
@@ -17,7 +18,6 @@ module.exports = {
             magnolia: '#E2E7F3',
             turquo: '#6FFFE9',
             yelo: '#FFD166',
-            pinky: '#EF476F',
          },
          fontFamily: {
             inter: ['Inter', 'sans-serif'],
@@ -27,6 +27,21 @@ module.exports = {
          boxShadow: {
             brand: '0.8rem 0.8rem #6FFFE9',
             button: '0.25rem 0.25rem #6FFFE9',
+         },
+         animation: {
+            'gradient-x': 'gradient-x 10s ease infinite',
+         },
+         keyframes: {
+            'gradient-x': {
+               '0%, 100%': {
+                  'background-size': '400% 400%',
+                  'background-position': '0% 50%',
+               },
+               '50%': {
+                  'background-size': '400% 400%',
+                  'background-position': '100% 50%',
+               },
+            },
          },
       },
    },

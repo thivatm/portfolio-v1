@@ -1,14 +1,17 @@
+import SocialLinks from 'components/SocialLinks'
 import React from 'react'
 
 function Footer() {
    return (
       <div className="py-8 space-y-2 text-sm">
+         <div className="block lg:hidden py-8">
+            <SocialLinks isVertical={false} />
+         </div>
          <p className="text-gray-300 text-center">
-            for developers by a{' '}
+            made with with <span className="text-red-500">❤</span> by{' '}
             <a href="#hero" className="text-turquo hover:underline">
-               developer
-            </a>{' '}
-            with <span className="text-turquo">❤</span>
+               a developer
+            </a>
          </p>
          <p className="text-center text-turquo hover:underline">
             <a

@@ -10,11 +10,15 @@ function NavBar() {
 
    // Control Navbar visibility
    const controlNavbar = () => {
+      console.log(window.pageYOffset)
       newValue = window.pageYOffset
       if (oldValue > newValue) {
          setShow(true)
       } else if (oldValue < newValue) {
          setShow(false)
+      }
+      if (100 >= window.pageYOffset && window.pageYOffset >= 0) {
+         setShow(true)
       }
       oldValue = newValue
    }
@@ -61,7 +65,7 @@ function NavBar() {
          } transition duration-700 bg-brand text-white fixed z-50 inset-x-0 top-0 shadow-md backdrop-filter backdrop-blur bg-opacity-80`}>
          <div className="h-20 py-3 px-8 md:px-12 font-fira flex items-center justify-between">
             <div className="logo-container">
-               <img className="w-9" alt="logo" src="/logo.png" />
+               <img className="w-7" alt="logo" src="/logo.png" />
             </div>
 
             {/* Nav Button */}
@@ -97,13 +101,14 @@ function NavBar() {
 
             {/* Contents */}
             <ul
-               className={`lg:hidden flex flex-col absolute top-0 right-0 space-y-8 items-center justify-center bg-brand-700 h-screen whitespace-nowrap overflow-hidden transition-width ease-in-out duration-600 ${
+               className={`lg:hidden flex flex-col absolute top-0 right-0 space-y-8 items-center justify-center bg-brand-900 h-screen whitespace-nowrap overflow-hidden transition-width ease-in-out duration-600 ${
                   isOpen ? 'md:w-1/2 w-2/3' : 'w-0'
                }`}>
                {navItems.map((item, index) => (
                   <li key={index} className="hover:text-turquo cursor-pointer">
                      <a
                         href={item.link}
+                        onClick={() => toggleNavbar(false)}
                         className="flex items-center space-x-2">
                         <svg
                            xmlns="http://www.w3.org/2000/svg"

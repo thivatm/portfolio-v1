@@ -8,7 +8,7 @@ function Contact() {
    return (
       <div
          id="contact"
-         className="pb-32 lg:pb-0 lg:h-screen flex justify-center items-center flex-col font-inter text-white">
+         className="pb-32 lg:pb-0 min-h-screen flex justify-center items-center flex-col font-inter text-white">
          <div className="animate__animated anim text-center space-y-8">
             <h3 className="font-fira text-2xl font-semibold text-white">
                <span className="text-turquo font-light">05.</span> Get In Touch
