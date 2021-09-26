@@ -4,6 +4,13 @@ import React, { useEffect, useState } from 'react'
 function AboutMe() {
    const [skills, setSkills] = useState([])
 
+   const goToCV = () => {
+      window.open(
+         'https://drive.google.com/file/d/1YIuTivirT3ELZR9HxEnzF_H7szOfmyCY/view?usp=sharing',
+         '_blank'
+      )
+   }
+
    useEffect(() => {
       setSkills([
          'JavaScript',
@@ -23,7 +30,7 @@ function AboutMe() {
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">01.</span> About Me
          </h3>
-         <div className="flex items-center justify-between flex-col space-y-8 lg:flex-row animate__animated anim">
+         <div className="flex items-center justify-between flex-col space-y-8 lg:space-y-0 lg:flex-row animate__animated anim">
             <div className="lg:w-2/3 md:pr-8">
                <p className="text-gray-400 mb-4 text-justify">
                   Hello! I am Thivagar and I enjoy building everything, from
@@ -80,9 +87,24 @@ function AboutMe() {
                </div>
             </div>
             <div className="w-full md:w-2/3 lg:w-1/3 px-8 animate__animated anim">
-               <div className="w-full m-auto relative">
-                  <div className="absolute w-full h-full inset-0 z-30 bg-brand-300 bg-opacity-40 transition-all hover:bg-opacity-0"></div>
-                  {/* <PDFView /> */}
+               <div className="w-full m-auto relative cursor-pointer">
+                  <div
+                     onClick={() => goToCV()}
+                     className="absolute flex items-center justify-center w-full h-full inset-0 z-30 bg-turquo bg-opacity-20 backdrop-filter backdrop-blur-sm transition-all hover:bg-opacity-0 hover:backdrop-blur-none">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-16 w-16 text-brand"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2h-1.528A6 6 0 004 9.528V4z" />
+                        <path
+                           fillRule="evenodd"
+                           d="M8 10a4 4 0 00-3.446 6.032l-1.261 1.26a1 1 0 101.414 1.415l1.261-1.261A4 4 0 108 10zm-2 4a2 2 0 114 0 2 2 0 01-4 0z"
+                           clipRule="evenodd"
+                        />
+                     </svg>
+                  </div>
+                  <img src="/cv.jpg" alt="PDF"></img>
                </div>
             </div>
          </div>
