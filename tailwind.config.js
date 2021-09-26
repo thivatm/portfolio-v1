@@ -35,6 +35,7 @@ module.exports = {
          backgroundColor: ['active'],
          boxShadow: ['active'],
          inset: ['active'],
+         backdropBlur: ['hover', 'focus'],
       },
    },
    plugins: [],
