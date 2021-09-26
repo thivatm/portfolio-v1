@@ -8,7 +8,7 @@ function Hero() {
    return (
       <div
          id="hero"
-         className="h-screen font-inter flex flex-col justify-center">
+         className="min-h-screen font-inter flex flex-col justify-center">
          <div className="flex flex-col-reverse md:flex-row">
             <div className="space-y-6">
                <p className="text-turquo font-fira text-xl">Hello, I'm</p>

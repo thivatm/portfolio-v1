@@ -45,7 +45,7 @@ function Home() {
             </div>
          </div>
          <div className="hidden lg:block animate__animated animate__fadeInLeft fixed lg:left-8 xl:left-14 bottom-0">
-            <SocialLinks />
+            <SocialLinks isVertical={true} />
          </div>
       </div>
    )
