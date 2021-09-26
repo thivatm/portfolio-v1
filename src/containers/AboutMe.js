@@ -1,4 +1,5 @@
 // import PDFView from 'components/PDFView'
+import Button from 'components/Button'
 import React, { useEffect, useState } from 'react'
 
 function AboutMe() {
@@ -26,7 +27,7 @@ function AboutMe() {
    return (
       <div
          id="aboutme"
-         className="h-screen flex justify-center flex-col font-inter text-white py-12 lg:py-0">
+         className="min-h-screen flex justify-center flex-col font-inter text-white py-12 lg:py-0">
          <h3 className="font-fira text-2xl font-semibold text-white mb-8">
             <span className="text-turquo font-light">01.</span> About Me
          </h3>
@@ -86,11 +87,11 @@ function AboutMe() {
                   </ul>
                </div>
             </div>
-            <div className="w-full md:w-2/3 lg:w-1/3 px-8 animate__animated anim">
+            <div className="hidden lg:block w-full md:w-2/3 lg:w-1/3 px-8 animate__animated anim">
                <div className="w-full m-auto relative cursor-pointer">
                   <div
                      onClick={() => goToCV()}
-                     className="absolute flex items-center justify-center w-full h-full inset-0 z-30 bg-turquo bg-opacity-20 backdrop-filter backdrop-blur-sm transition-all hover:bg-opacity-0 hover:backdrop-blur-none">
+                     className="absolute flex flex-col items-center justify-center w-full h-full inset-0 z-30 bg-turquo bg-opacity-20 backdrop-filter backdrop-blur-sm transition-all hover:bg-opacity-0 hover:backdrop-blur-none">
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-16 w-16 text-brand"
@@ -103,10 +104,16 @@ function AboutMe() {
                            clipRule="evenodd"
                         />
                      </svg>
+                     <p className="text-brand font-medium mt-2">
+                        Click to View
+                     </p>
                   </div>
                   <img src="/cv.jpg" alt="PDF"></img>
                </div>
             </div>
+         </div>
+         <div className="block lg:hidden py-8">
+            <Button onClick={goToCV} placeholder="Resume" />
          </div>
       </div>
    )

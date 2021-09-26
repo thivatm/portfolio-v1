@@ -1,11 +1,23 @@
 import React from 'react'
 
-function SocialLinks() {
+function SocialLinks({ isVertical }) {
    return (
-      <div className="w-full h-screen flex items-center justify-center">
-         <ul className="space-y-8">
+      <div
+         className={`w-full ${
+            isVertical ? 'h-screen' : 'h-auto'
+         } flex items-center justify-center`}>
+         <ul
+            className={`${
+               isVertical
+                  ? 'space-y-8'
+                  : 'flex items-center justify-center space-x-8'
+            }`}>
             <li className="flex justify-center">
-               <div className="w-0.5 h-24 bg-magnolia bg-opacity-30"></div>
+               {isVertical ? (
+                  <div className="w-0.5 h-24 bg-magnolia bg-opacity-30"></div>
+               ) : (
+                  <hr className="w-6 md:w-24 border-magnolia border-opacity-60" />
+               )}
             </li>
             <li>
                <svg
@@ -72,7 +84,11 @@ function SocialLinks() {
                </svg>
             </li>
             <li className="flex justify-center">
-               <div className="w-0.5 h-24 bg-magnolia bg-opacity-30"></div>
+               {isVertical ? (
+                  <div className="w-0.5 h-24 bg-magnolia bg-opacity-30"></div>
+               ) : (
+                  <hr className="w-6 md:w-24 border-magnolia border-opacity-60" />
+               )}
             </li>
          </ul>
       </div>
