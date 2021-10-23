@@ -20,9 +20,16 @@ function Hero() {
                </h2>
                <p className="text-gray-400 max-w-xl">
                   I'm a software engineer specializing in building (and
-                  occasionally designing) exceptional digital experiences.
-                  Currently, I'm focused on building accessible, human-centered
-                  products at Upstatement.
+                  occasionally designing) modern web apps to mobile apps for
+                  various industries and domain. Currently, Building
+                  Blockchain-powered Traceability Solutions for Supply Chain{' '}
+                  <a
+                     className="text-turquo hover:text-magnolia"
+                     href="https://tracified.com/"
+                     target="_blank"
+                     rel="noreferrer">
+                     @Tracified
+                  </a>
                </p>
                <Button onClick={learnMore} placeholder="Learn More" />
             </div>
