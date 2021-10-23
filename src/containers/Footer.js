@@ -8,7 +8,7 @@ function Footer() {
             <SocialLinks isVertical={false} />
          </div>
          <p className="text-gray-300 text-center">
-            made with with <span className="text-red-500">❤</span> by{' '}
+            made with <span className="text-red-500">❤</span> by{' '}
             <a href="#hero" className="text-turquo hover:underline">
                a developer
             </a>
