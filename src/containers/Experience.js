@@ -18,8 +18,10 @@ function Experience() {
             tech: ['Angular', 'Next JS', 'Node JS', 'Ionic', 'MongoDB'],
             theme: '#28a745',
             description: [
-               'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-               'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+               'Write modern, performant, maintainable code for the Product Tracified',
+               'Work with a variety of different languages, platforms and frameworks such as TypeScript, Angular, Ionic, Next and NodeJS',
+               "Fix and maintain the codebase to support and fulfil the existing enterprise customers' change requests",
+               'Work with Stellar to maintain the integrity of blockchain with Tracified Apps',
             ],
          },
          {
@@ -27,10 +29,10 @@ function Experience() {
             position: '',
             duration: 'Freelancer',
             theme: '#78209e',
-            tech: ['Node JS', 'jQuery'],
+            tech: ['Node JS', 'PostgreSQL', 'jQuery', 'Pug'],
             description: [
-               'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-               'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+               'Maintain a modern web application which is a 3rd Evolution of a Sillicon Valley Startup which gives a real estate agent to protrude from their competitors.',
+               "Implement new features while maintaining the applications' overall user experirnce",
             ],
          },
          {
@@ -40,9 +42,8 @@ function Experience() {
             theme: '#8427e2',
             tech: ['C#', 'PLSQL'],
             description: [
-               'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-               'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-               'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript',
+               'Write business logics and convert the existing destop application to web application.',
+               'Develop a solution/API for CRM component in IFS application to bridge the database of IFS application and Outlook Application.',
             ],
          },
       ]
