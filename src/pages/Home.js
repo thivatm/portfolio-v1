@@ -35,6 +35,7 @@ function Home() {
          <NavBar />
          <div className="max-w-7xl mx-auto">
             <div className="xl:max-w-5xl lg:max-w-4xl mx-auto font-inter px-8">
+               {/* Components */}
                <Hero />
                <AboutMe />
                <Experience />
